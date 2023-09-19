@@ -1,50 +1,4 @@
-function newFunction(name, age, country) {
-  var name = "oscar";
-  var age = 32;
-  var country = "mx";
-  console.log(name, age, country);
-}
-
-//es6
-function newFunction2(name = "oscar", age = 32, country = "mx") {
-  console.log(name, age, country);
-}
-
-newFunction2();
-newFunction2("juan", 25, "mx");
-
-//template
-let hello = "hello";
-let world = "world";
-let epicPhrase = hello + " " + world;
-console.log(epicPhrase);
-
-let epicPhrase2 = `${hello} ${world}`;
-console.log(epicPhrase2);
-
-let lorem =
-  "Quiero escribir una frase epica\n" + "otra frase epica que necsitamos.";
-console.log(lorem);
-
-let lorem2 = `otra frase epica que necesitamos
-            ahora es otra frase epica`;
-console.log(lorem2);
-
-let person = {
-  name: "camilo",
-  age: 32,
-  country: "MX",
-};
-
-console.log(person.name, person.age);
-
-//forma de aceder a los valores del obj en es6
-let { name, age, country } = person;
-console.log(name, age, country);
-console.log(
-  `el nombre de la persona contratada es ${name} y su edad es ${age}`
-);
-
+//
 let team1 = ["Oscar", "Juliana", "Ricardo"];
 let team2 = ["Juan", "Pedro", "Maria"];
 
@@ -71,15 +25,17 @@ const a = "b";
 a = "a"; //no es posible reasignar una constante
 
 //prpiedad de objetos mejorada
+{
+  let name = "camilo";
+  let age = 26;
 
-let name = "camilo";
-let age = 26;
-
-//eS5
-obj = { name: name, age: age };
-//eS6
-obj2 = { name, age };
-console.log(obj2);
+  //eS5
+  obj = { name: name, age: age };
+  console.log(obj);
+  //eS6
+  obj2 = { name, age };
+  console.log(obj2);
+}
 
 //Arrow function
 const names = [
