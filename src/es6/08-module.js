@@ -1,8 +1,10 @@
 const hello = () => {
-    return 'va a llover'
+    console.log('Hola');
 }
+
 
 //esta es la forma de exportarlo
 //porque estoy usando la extension code runner
-module.exports = hello;
+//module.exports = hello;
 
+export default hello;
